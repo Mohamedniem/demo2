@@ -1,0 +1,17 @@
+<div class="container py-5">
+  <div class="w-50 py-5 mx-auto">
+    <input [(ngModel)]="bindData" type="text" class="form-control" placeholder="">
+    <h3 class="mt-4">the binded data is {{bindData}}</h3>
+    <div class="mt-4">
+      <button class="btn btn-outline-danger" (click)="makeEmpty()">make it empty</button>
+    </div>
+    <hr>
+    <div class="my-5">
+      <button (click)="toggleData() ; logclick($event)" class="btn btn-danger">diplay details</button>
+      <div style="width: 200px; height: 200px;">
+        <p [class.color]="showColor" *ngIf="showsecretPassword" class="mt-5">secretPassword=tuna</p>
+
+      </div>
+    </div>
+  </div>
+</div>
